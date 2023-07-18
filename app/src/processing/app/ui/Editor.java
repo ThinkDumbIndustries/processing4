@@ -2115,6 +2115,9 @@ public abstract class Editor extends JFrame implements RunnerListener {
       // per other applications, don't set this until the file has been saved
       getRootPane().putClientProperty("Window.documentFile", null);
     }
+
+    getRootPane().putClientProperty( "apple.awt.fullWindowContent", true ); // Seemingly reauired for transparentTitleBar
+    getRootPane().putClientProperty( "apple.awt.transparentTitleBar", true );
   }
 
 

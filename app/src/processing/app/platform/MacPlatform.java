@@ -63,6 +63,7 @@ public class MacPlatform extends DefaultPlatform {
     final Desktop desktop = Desktop.getDesktop();
 
     System.setProperty("apple.laf.useScreenMenuBar", "true");
+    // System.setProperty("apple.awt.application.appearance", "NSAppearanceNameDarkAqua"); // Does not work
 
     // Set the menu bar to be used when nothing else is open.
     JMenuBar defaultMenuBar = new JMenuBar();
